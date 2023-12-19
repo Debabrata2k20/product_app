@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body bgcolor="#ffe4e1">
+<center>
+    <h1>
+        <form action="./update" method="get">
+            Select ProductId:<select name="t1">
+            {% for p in records %}
+                <option value="{{ p.pid }}">{{ p.pid }}</option>
+            {% endfor %}
+        </select><br>
+            Enter ProductName:<input type="text" name="t2"><br>
+            Enter ProductCost:<input type="text" name="t3"><br>
+            Enter ProductMfdt:<input type="text" name="t4"><br>
+            Enter ProductExpdt:<input type="text" name="t5"><br>
+            <input type="submit" value="update">
+        </form>
+    </h1>
+</center>
+</body>
+</html>
